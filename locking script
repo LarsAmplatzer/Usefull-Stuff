@@ -12,7 +12,7 @@ if mkdir ${LOCK_DIR} 2>/dev/null; then
   echo $$ > ${PID_FILE}
 
   # Code to execute
-  sleep 10
+  .$1
   # End of code to execute
 
   rm -rf ${LOCK_DIR}
