@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# this script runs the script that is passed in as the first argument.
 # this scripts creates a file in /tmp/ indicating that the script is running.
 # As long as the lock file is present the script does not run a second etc. instance.
 
