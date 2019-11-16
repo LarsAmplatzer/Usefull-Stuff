@@ -4,7 +4,7 @@
 # this scripts creates a file in /tmp/ indicating that the script is running.
 # As long as the lock file is present the script does not run a second etc. instance.
 
-LOCK_NAME="COPY_TO_SERVER_LOCK"
+LOCK_NAME=$(basename $1)
 LOCK_DIR='/tmp/'${LOCK_NAME}.lock
 PID_FILE=${LOCK_DIR}'/'${LOCK_NAME}'.pid'
 
