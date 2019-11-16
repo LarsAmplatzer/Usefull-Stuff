@@ -27,6 +27,7 @@ else
   else
     # If the process is not running, yet there is a PID file--like in the case
     # of a crash or sudden reboot--then get rid of the ${LOCK_DIR}
+    echo "Process was not running but a PID file stil exists. Deleting abandoned PID file"
     rm -rf ${LOCK_DIR}
     exit
   fi
